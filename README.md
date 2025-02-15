@@ -2,7 +2,7 @@
 Full-Stack React: Kanban Board
 
 # license 
-![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-green.svg)
+![License: Apache 2.0](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 This full-stack Kanban board application implements JWT authentication to provide a secure login system for managing work tasks. The app includes a React frontend, a Node.js/Express backend, and PostgreSQL for database management. Authentication is handled using JSON Web Tokens (JWTs) to ensure secure and scalable user sessions.
@@ -24,7 +24,7 @@ This full-stack Kanban board application implements JWT authentication to provid
 A Kanban board is a visual tool used to manage workflow and tasks efficiently. It helps track progress, identify bottlenecks, and improve productivity. The board typically consists of columns representing different stages of a process.
 
 ## License
-License: https://www.apache.org/licenses/LICENSE-2.0
+License: https://opensource.org/licenses/MIT
 
 ## Features
   * User authentication (JWT-based login/logout)
