@@ -13,12 +13,12 @@ This full-stack Kanban board application implements JWT authentication to provid
 - [Usage](#usage)
 - [License](#license)
 - [Features](#features)
+- [URL](#URL)
 - [Questions](#questions)
 
 
 ## Installation
-* npm install
-* https://kanban-board-qwae.onrender.com
+* Node.js (version 14 or later)
 
 ## Usage
 A Kanban board is a visual tool used to manage workflow and tasks efficiently. It helps track progress, identify bottlenecks, and improve productivity. The board typically consists of columns representing different stages of a process.
@@ -40,6 +40,9 @@ License: https://www.apache.org/licenses/LICENSE-2.0
   * Styled with Tailwind CSS
 
   * Environment variable configuration using .env
+
+## URL
+* https://kanban-board-qwae.onrender.com
 
 ## Questions
 For any questions, contact me at:
