@@ -27,7 +27,7 @@ License: https://www.apache.org/licenses/LICENSE-2.0
 
 ## Questions
 For any questions, contact me at:
--GitHub: [test](https://github.com/IK8933)
--Email: [test](mailto:iankessack1989@gmail.com).
+-GitHub: (https://github.com/IK8933)
+-Email: (mailto:iankessack1989@gmail.com).
 
 © 2025 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
