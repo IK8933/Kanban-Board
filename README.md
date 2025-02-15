@@ -12,6 +12,7 @@ This full-stack Kanban board application implements JWT authentication to provid
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Features](#features)
 - [Questions](#questions)
 
 
@@ -24,6 +25,21 @@ A Kanban board is a visual tool used to manage workflow and tasks efficiently. I
 
 ## License
 License: https://www.apache.org/licenses/LICENSE-2.0
+
+## Features
+  * User authentication (JWT-based login/logout)
+
+  * CRUD operations for tasks and boards
+
+  * Drag-and-drop support for task management
+
+  * PostgreSQL database with Sequelize ORM
+
+  * RESTful API with Express.js
+
+  * Styled with Tailwind CSS
+
+  * Environment variable configuration using .env
 
 ## Questions
 For any questions, contact me at:
