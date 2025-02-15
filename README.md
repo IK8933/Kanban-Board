@@ -12,8 +12,6 @@ This full-stack Kanban board application implements JWT authentication to provid
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 
