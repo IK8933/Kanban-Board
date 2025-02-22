@@ -3,30 +3,29 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [
-    react(), // ✅ Ensures React is properly loaded
+    react(), // You're missing the react plugin
   ],
   server: {
-    port: 3000, // ✅ Keep frontend on 3000
+    allowedHosts: [
+      'kanban-board-1-5uko.onrender.com', // Remove https:// from hosts,
+      'kanban-board-qwae.onrender.com',
+      '0.0.0.0'
+    ],
+    port: 3001,
     open: true,
     host: "0.0.0.0",
-    hmr: {
-      protocol: "ws",
-      host: "localhost",
-    },
-    allowedHosts: [
-      "localhost",
-      "kanban-board-qwae.onrender.com",
-    ],
     proxy: {
       "/api": {
-        target: "https://kanban-board-qwae.onrender.com", // ✅ Online backend
+        // target: "https://localhost:3001",
+        target: "https://kanban-board-1-5uko.onrender.com",
         changeOrigin: true,
-        secure: true, // 🔹 If the API uses HTTPS, this should be true
+        secure: false,
       },
       "/auth": {
-        target: "https://kanban-board-qwae.onrender.com",
+        // target: "https://localhost:3001",
+        target: "https://kanban-board-1-5uko.onrender.com",
         changeOrigin: true,
-        secure: true, // 🔹 Match the target API security
+        secure: false,
       },
     },
   },
@@ -37,68 +36,35 @@ export default defineConfig({
 });
 
 
-
-
-// import { defineConfig } from 'vite';
-// // https://vitejs.dev/config/
 // export default defineConfig({
-//     server: {
-//         port: 3000,
-//         open: true,
-//         proxy: {
-//             '/api': {
-//                 target: 'http://localhost:3001',
-//                 changeOrigin: true,
-//                 secure: false,
-//             },
-//             '/auth': {
-//                 target: 'http://localhost:3001',
-//                 changeOrigin: true,
-//                 secure: false
-//             },
-//         },
-//     },
-// });
-
-
-
-
-
-
-
-
-
-
-// export default defineConfig({
-//     plugins: [
-//       react(), // You're missing the react plugin
+//   plugins: [
+//     react(), // You're missing the react plugin
 //     tailwindcss(),
-//     ],
-//     server: {
+//   ],
+//   server: {
 //     allowedHosts: [
-//         'localhost:3001', // Remove https:// from hosts
-//         'localhost:3001',
-//         '0.0.0.0'
+//       'mov-api-e-client.onrender.com', // Remove https:// from hosts
+//       'mov-api-e-server.onrender.com',
+//       '0.0.0.0'
 //     ],
 //     port: 3001,
 //     open: true,
 //     host: "0.0.0.0",
 //     proxy: {
-//         "/api": {
-//         target: "https://kanban-board-qwae.onrender.com",
+//       "/api": {
+//         target: "https://mov-api-e-server.onrender.com",
 //         changeOrigin: true,
 //         secure: false,
-//         },
-//         "/auth": {
-//         target: "https://kanban-board-qwae.onrender.com",
+//       },
+//       "/auth": {
+//         target: "https://mov-api-e-server.onrender.com",
 //         changeOrigin: true,
 //         secure: false,
-//         },
+//       },
 //     },
-//     },
-//     preview: {
+//   },
+//   preview: {
 //     host: true,
 //     port: 3000,
-//     },
+//   },
 // });
-
